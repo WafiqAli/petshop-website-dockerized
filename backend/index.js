@@ -28,7 +28,7 @@ const Products = mongoose.model('Products', productsSchema);
 
 const cors = require('cors');
 server.use(cors({
-    origin: 'http://localhost:3001'
+    origin: ['http://localhost:3001', 'http://localhost:3000']
 }));
 
 server.listen(PORT, function() {
