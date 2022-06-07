@@ -1,0 +1,136 @@
+@use '../../variables.scss';
+
+.nav-container {
+    background-color: variables.$col-accent;
+    padding: 15px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.nav-item {
+    margin: 0 1.5rem;
+    font-family: variables.$poppins;
+    font-size: variables.$fontSizeMain;
+    color: variables.$col-text-white;
+}
+
+.nav-item button {
+    text-decoration: none;
+    border: none;
+    background: none;
+    font-family: variables.$poppins;
+    font-size: variables.$fontSizeMain;
+    color: variables.$col-text-white;
+}
+
+.drop-icon {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.icon {
+    font-size: 25px;
+    padding-right: 20px;
+}
+.icon.heart {
+    margin-left: 50px;
+    color: variables.$col-primary;
+}
+
+/**** MEGA MENU CSS ******/
+a {
+    text-decoration: none;
+    color: variables.$col-accent;
+}
+.mm-wrapper {
+    height: 450px;
+    margin: 0 0 30px 0;
+    background-color: variables.$col-text-white;
+    box-shadow: 0px 4px 20px rgba(173, 173, 173, 0.5);
+    
+}
+.mm-cat {
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 1125px;
+}
+
+.mm-cat > p {
+    font-family: variables.$poppins;
+    font-weight: 600;
+    font-size: 22px;
+    color: variables.$col-accent;
+    line-height: 25px;
+    text-decoration: underline solid variables.$col-primary 5px;
+    text-decoration-skip-ink: none;
+    text-underline-offset: -3px;
+}
+
+.mm-container {
+    flex-wrap: wrap;
+    max-width: 1125px;
+    margin: 0 auto;
+    justify-content:space-between;
+    align-items: flex-start;
+}
+
+.mm-subcat {
+    font-family: variables.$poppins;
+    color: variables.$col-accent;
+    flex-basis: 33.333333%;
+}
+
+
+.subcat-header {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.subcat-items {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    list-style-type: none;
+}
+
+.dog-img {
+    background-image: url('../../Assets/Homepage/Navigation Dropdown/dogMM.png');
+    background-repeat: no-repeat;
+    background-position:90% 40%;
+}
+.cat-img {
+    background-image: url('../../Assets/Homepage/Navigation Dropdown/catMM.png');
+    background-repeat: no-repeat;
+    background-position: 95% 70%;
+}
+.fish-img {
+    background-image: url('../../Assets/Homepage/Navigation Dropdown/fishMM.png');
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+}
+.smallpets-img {
+    background-image: url('../../Assets/Homepage/Navigation Dropdown/smallPetsMM.png');
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+}
+.bird-img {
+    background-image: url('../../Assets/Homepage/Navigation Dropdown/birdMM.png');
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+}
+.reptile-img {
+    background-image: url('../../Assets/Homepage/Navigation Dropdown/reptileMM.png');
+    background-repeat: no-repeat;
+    background-position: 99% 50%;
+}
+.horse-img {
+    background-image: url('../../Assets/Homepage/Navigation Dropdown/horseMM.png');
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+}
