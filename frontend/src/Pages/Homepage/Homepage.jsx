@@ -5,6 +5,7 @@ import BrandsBanner from '../../components/Homepage/BrandsBanner';
 import HomeBanner from '../../components/Homepage/HomeBanner';
 import HomeProductSearch from '../../components/Homepage/HomeProductSearch';
 import Testimonials from '../../components/Homepage/Testimonials';
+import LearnMore from '../../components/Homepage/LearnMore';
 
 const Homepage = () => {
   
@@ -31,6 +32,7 @@ const Homepage = () => {
         <BrandsBanner />
         <HomeProductSearch />
         <Testimonials testimonials={testimonials} />
+        <LearnMore />
     </div>
   )
 }

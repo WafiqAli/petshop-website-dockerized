@@ -215,3 +215,65 @@
 .review-page-circle.active {
     color: variables.$col-primary
 }
+
+
+/******** LEARN MORE ***************/
+.learnMore-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: variables.$poppins;
+    color: variables.$col-accent;
+}
+.learnMore-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.learnMore-item.left {
+    background-color: variables.$col-bg-grey;
+}
+.learnMore-item.left div {
+    align-self: flex-end;
+    margin-right: 150px;
+    width: 450px;
+}
+.learnMore-item.right div {
+    align-self: flex-start;
+    margin-left: 150px;
+    width: 450px;
+}
+.learnMore-item.right {
+    background-color: variables.$col-text-white;
+}
+.learnMore-header {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 39px;
+    text-decoration: underline solid variables.$col-primary 5px;
+    text-underline-offset: 2px;
+    text-decoration-skip-ink: none;
+}
+.learnMore-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+.learnMore-btn {
+    background-color: variables.$col-accent;
+    color: variables.$col-text-white;
+    font-family: variables.$poppins;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    border: none;
+    width: 122px;
+    height: 35px;
+    float: right;
+    &:hover {
+        background-color: variables.$col-primary;
+    }
+}
