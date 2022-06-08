@@ -31,14 +31,15 @@ const Products = mongoose.model('Products', productsSchema);
 const testimonalsDogsSchema = new mongoose.Schema(
     {
         owner: String,
+        petType: String,
         petName: String,
         petAge: String,
         petBreed: String,
         comment: String
     },
-    { collection: 'testimonials-dog' }
+    { collection: 'testimonials' }
 );
-const testimonialsDogs = mongoose.model('testimonials-dog', testimonalsDogsSchema);
+const testimonials = mongoose.model('testimonials', testimonalsDogsSchema);
 
 
 
@@ -57,8 +58,8 @@ server.get('/products', (req, res) => {
 
 });
 
-server.get('/testimonials/dogs', (req, res) => {
+server.get('/testimonials', (req, res) => {
 
-    testimonialsDogs.find().then(result => res.send(result)).catch(err => console.log(err));
-    
+    testimonials.find().then(result => res.send(result)).catch(err => console.log(err));
+
 });

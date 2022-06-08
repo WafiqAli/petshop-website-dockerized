@@ -11,7 +11,7 @@ const Homepage = () => {
   const [testimonials, setTestimonials] = useState(null);
   
   useEffect(() => {
-    fetch('http://localhost:9001/testimonials/dogs')
+    fetch('http://localhost:9001/testimonials')
       .then(response => {
         if (response.ok) {
           return response.json();

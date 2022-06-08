@@ -115,3 +115,103 @@
     background-repeat: no-repeat;
     background-position: 50% 100%;
 }
+
+
+/********* Testimonials ***************/
+
+.test-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: variables.$poppins;
+    color: variables.$col-accent;
+}
+.test-title {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 39px;
+}
+.test-navbar {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    
+}
+.test-navbar-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 35px;
+    margin: 0 15px;
+    background-color: variables.$col-primary-light;
+    border-radius: 40px;
+    filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, 0.1));
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    &:hover {
+        cursor: pointer;
+    }
+}
+.test-navbar-item.active {
+    background-color: variables.$col-primary;
+}
+.test-content {
+    margin: 30px;
+}
+
+.review-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.review-card {
+    display: flex;
+    width: 400px;
+    height: 210px;
+    margin: 0 10px;
+    background-color: variables.$col-text-white;
+    filter: drop-shadow(0px 2px 8px rgba(0, 0, 0, 0.25));
+}
+.card-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    padding: 2px;
+}
+
+.card-text p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    margin: 10px 0 5px 0;
+}
+.card-text h3 {
+    font-weight: 500;
+    font-size: 18px;
+    margin: 0 0 -5px 0;
+}
+
+.review-arrows {
+    font-size: 40px;
+    color: variables.$col-accent;
+    margin: 30px;
+}
+
+.review-page-count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.review-page-count > div {
+    margin: 50px 5px 0 5px;
+}
+.review-page-circle {
+    color: variables.$col-primary-light;
+    text-align: center;
+}
+.review-page-circle.active {
+    color: variables.$col-primary
+}
