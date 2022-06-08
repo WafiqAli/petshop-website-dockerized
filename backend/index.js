@@ -16,7 +16,9 @@ mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
-const productsSchema = new mongoose.Schema(
+
+/*********      SCHEMAS          *******/
+const productsSchema = new mongoose.Schema( 
     {
         productName: String,
         productDescription: String,
@@ -25,6 +27,20 @@ const productsSchema = new mongoose.Schema(
     { collection: 'Products' }
 );
 const Products = mongoose.model('Products', productsSchema);
+
+const testimonalsDogsSchema = new mongoose.Schema(
+    {
+        owner: String,
+        petName: String,
+        petAge: String,
+        petBreed: String,
+        comment: String
+    },
+    { collection: 'testimonials-dog' }
+);
+const testimonialsDogs = mongoose.model('testimonials-dog', testimonalsDogsSchema);
+
+
 
 const cors = require('cors');
 server.use(cors({
@@ -39,4 +55,10 @@ server.get('/products', (req, res) => {
 
     Products.find().then(result => res.send(result)).catch(err => console.log(err));
 
+});
+
+server.get('/testimonials/dogs', (req, res) => {
+
+    testimonialsDogs.find().then(result => res.send(result)).catch(err => console.log(err));
+    
 });
