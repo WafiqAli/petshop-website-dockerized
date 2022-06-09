@@ -277,3 +277,98 @@
         background-color: variables.$col-primary;
     }
 }
+
+
+/*********** SAVE A LIFE *********************/
+.sal-wrapper {
+    font-family: variables.$poppins;
+    color: variables.$col-accent;
+    padding: 1px;
+    min-height: 605px;
+    margin: auto;
+    max-width: 1920px;
+    background-image: url('../../Assets/Homepage/Body/SaveALife.png'),
+                      url('../../Assets/Homepage/Body/Circle.png'),
+                      url('../../Assets/Homepage/Body/paws-bg/sal_paw_1.svg'),
+                      url('../../Assets/Homepage/Body/paws-bg/sal_paw_2.svg'),
+                      url('../../Assets/Homepage/Body/paws-bg/sal_paw_3.svg'),
+                      url('../../Assets/Homepage/Body/paws-bg/sal_paw_4.svg'),
+                      url('../../Assets/Homepage/Body/paws-bg/sal_paw_5.svg');
+    background-repeat: no-repeat;
+    background-position: 25% 51%, 28% 50%,
+                         21% 20%, 33% 97%, 57% 50%, 95% 70%, 96% 12%;
+}
+.sal-header {
+    margin-top: 100px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 39px;
+}
+.sal-subheading {
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+}
+.sal-subheading.op {
+    text-align: left;
+    margin-left: 8px;
+    text-decoration: underline solid variables.$col-primary 5px;
+    text-underline-offset: -1px;
+    text-decoration-skip-ink: none;
+}
+.sal-number {
+    color: variables.$col-primary;
+    font-weight: 600;
+}
+.sal-paw {
+    font-size: 30px;
+    padding-top: 2px;
+}
+.sal-partners-wrapper {
+    margin: auto;
+    padding: 10px 10px 10px 500px;
+    max-width: 750px;
+}
+.sal-partners-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.sal-partners-item {
+    margin: 7px;
+}
+.sal-partners-item button {
+    font-family: variables.$poppins;
+    font-weight: 500;
+    font-size: 14px;
+    border: none;
+    background-color: variables.$col-button-grey;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    height: 35px;
+    &:hover {
+        color: variables.$col-text-white;
+        background-color: variables.$col-primary;
+    }
+}
+.sal-partners-container :nth-child(1) button {
+    width: 153px;
+}
+.sal-partners-container :nth-child(3) button {
+    width: 280px;
+}
+.sal-partners-container :nth-child(4) button {
+    width: 309px;
+}
+.sal-partners-container :nth-child(5) button {
+    width: 153px;
+    margin-left: 15px;
+}
+.sal-partners-description {
+    margin-top: 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+}
+

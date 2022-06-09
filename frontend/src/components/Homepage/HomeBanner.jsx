@@ -9,7 +9,6 @@ import deliveryBanner from '../../Assets/Homepage/Banner/AutodeliveryBanner.svg'
 const HomeBanner = () => {
 
   const [index, setIndex] = useState("");
-  const delay = 2500;
 
   const images = [
     { url: dogBannerImg },
@@ -27,6 +26,8 @@ const HomeBanner = () => {
         images={images}
         showBullets={true}
         showNavs={true}
+        autoPlay={true}
+        autoPlayDelay={5} //seconds
       />
     </div>
   )
