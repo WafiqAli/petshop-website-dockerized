@@ -8,6 +8,7 @@
     import amexIcon from '../../Assets/Footer/amex.png';
     import apIcon from '../../Assets/Footer/afterpay.png';
     import lbIcon from '../../Assets/Footer/laybuy.png';
+import { Link } from 'react-router-dom';
 
     const Footer = () => {
     return (
@@ -56,6 +57,7 @@
                         <li><a href='/'>Blog</a></li>
                         <li><a href='/'>Dog Breed Information</a></li>
                         <li><a href='/'>Features</a></li>
+                        <li><a href='SortedProductNames'>Week 1 Quicksort</a></li>
                     </ul>
                 </div>
                 <div className='links-container'>

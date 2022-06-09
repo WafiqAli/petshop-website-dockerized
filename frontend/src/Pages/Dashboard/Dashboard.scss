@@ -1,0 +1,43 @@
+@use '../../variables.scss';
+
+.page-header-wrapper {
+    font-family: variables.$poppins;
+    color: variables.$col-accent;
+    text-align: center;
+    margin: 40px;
+}
+.page-header-wrapper h1 {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 39px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 225px 1fr;
+    grid-template-rows: 71px 1fr;
+    grid-template-areas:
+        "dash-sidenav dash-header"
+        "dash-sidenav dash-main";
+    height: 1385px;
+    width: 1170px;
+    margin: 20px;
+}
+
+.dash-header {
+    grid-area: dash-header;
+    background-color: variables.$col-bg-grey;
+    border-bottom: 0.5px solid variables.$col-dash-border;
+    border-radius: 0px 15px 0px 0px;
+}
+.dash-sidenav {
+    grid-area: dash-sidenav;
+    background-color: variables.$col-bg-grey;
+    border-right: 0.5px solid variables.$col-dash-border;
+    border-radius: 15px 0px 0px 15px;
+}
+.dash-main {
+    grid-area: dash-main;
+    background-color: variables.$col-bg-grey;
+    border-radius: 0px 0px 15px 0px;
+}

@@ -2,8 +2,9 @@ import React from 'react';
 import './Navbar.scss';
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCaretDown, faHeart, faCartShopping } from '@fortawesome/free-solid-svg-icons';
+import { faCaretDown, faHeart, faCartShopping, faCircleUser } from '@fortawesome/free-solid-svg-icons';
 import MegaMenu from './MegaMenu';
+import { Link } from 'react-router-dom';
 const Navbar = () => {
 
   const [activeTab, setActiveTab] = useState("");
@@ -65,6 +66,9 @@ const Navbar = () => {
           </div>
           <div>
             <FontAwesomeIcon className='icon cart' icon={faCartShopping} />
+          </div>
+          <div>
+            <Link className='nav-item-link' to='/Dashboard'><FontAwesomeIcon className='icon user' icon={faCircleUser} /></Link>
           </div>
         </div>
       </div>

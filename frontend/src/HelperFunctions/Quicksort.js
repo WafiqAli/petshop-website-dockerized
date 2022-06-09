@@ -1,4 +1,4 @@
-const Quicksort = (list) => {
+export const Quicksort = (list) => {
 
     if (list.length < 2) {
         return list;
@@ -20,4 +20,4 @@ const Quicksort = (list) => {
 
 }
 
-module.exports = Quicksort;
+//module.exports = Quicksort;
