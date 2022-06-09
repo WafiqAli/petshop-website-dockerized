@@ -17,6 +17,7 @@
     "react-simple-image-slider": "^2.4.1",
     "sass": "^1.52.2",
     "web-vitals": "^2.1.4"
+    
   },
   "scripts": {
     "start": "react-scripts start",

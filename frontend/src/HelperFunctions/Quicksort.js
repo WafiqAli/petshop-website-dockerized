@@ -1,4 +1,4 @@
-export const Quicksort = (list) => {
+const Quicksort = (list) => {
 
     if (list.length < 2) {
         return list;
@@ -19,3 +19,5 @@ export const Quicksort = (list) => {
     return [...Quicksort(left), pivot,...Quicksort(right)];
 
 }
+
+module.exports = Quicksort;
