@@ -1,0 +1,57 @@
+@use '../../variables.scss';
+
+.footer-wrapper {
+    background-color: variables.$col-bg-grey;
+    padding: 20px;
+}
+
+.links-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.links-container {
+    flex-direction: column;
+    margin: 30px 60px;
+    font-family: variables.$poppins;
+    color: variables.$col-accent;
+}
+.links-container h3 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+}
+.links-list {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.links-list li {
+    list-style: none;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 10px;
+    &:hover {
+        text-decoration: underline solid variables.$col-accent 1px;
+        text-decoration-skip-ink: none;
+    }
+}
+
+.pb-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pb-container div {
+    margin: 0 5px;
+}
+
+.footer-copyright {
+    font-family: variables.$poppins;
+    color: variables.$col-accent;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+}
